@@ -1,0 +1,495 @@
+@font-face {
+    font-family: Exo Italic;
+    src: url(../fonts/9842.otf);
+   }
+p{	margin-bottom: 0;
+	color: #234de7;
+}
+a:focus{text-decoration: none; outline: none;}
+.orange{
+	color: #ff5617;
+}
+.blue{
+	color: #234de7;
+}
+/*=====================================HEADER========================================*/
+header{
+	background: #fff;
+	margin-top: 10px;
+}
+header .row .col-12 .row .col-md-5{z-index: 90;}
+header p{
+	font-family: 'Exo Italic', Arial, sans-serif;
+	font-weight: 600;
+	font-size: 1rem;
+}
+#tel{
+	text-align: right;
+}
+#tel a:first-child{margin-right: 10px;}
+#logo-img-wrap{
+	margin-top:-20px;
+}
+#logo{
+	display: block;
+	margin: 0 auto;
+	z-index: 2;
+}
+#logo-desc{
+	margin-top:-20px;
+}
+#logo-desc p{font-size: 0.9rem;}
+#desc-right-part{text-align: right;}
+.my-offset{margin-left: 5.5%;}
+/*======================================MENU===============================================*/
+#main{
+	height: 65px;
+	width: 65px;
+	background: url(../img/menu-btn.png) no-repeat;
+	position: fixed;
+	top: 30px;
+	left: 50px;
+	z-index: 99;
+	overflow: hidden;
+}
+.my-btn{
+	margin: 7.5px 15px;
+	display: inline-block;
+}
+#btn-wrap{
+	position: absolute;
+	left: 70px;
+	top: 12px;
+	width: 0;
+	height: 41px;
+
+	background: #234DE7;
+	border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#main:hover{
+	width: 720px;
+	cursor: pointer;
+	background: url(../img/menu-btn-hover.png) no-repeat;
+}
+#main:hover #btn-wrap{
+	width: 650px;
+	transition: 0.4s;
+}
+#main:hover #btn-wrap a{
+	opacity: 1;
+	transition: .5s;
+}
+#btn-wrap a{
+	color: #fff;
+	opacity: 0;
+}
+
+#main {
+	transform: translateY(-100px);
+}
+.headhesive{
+  transform: translateY(-100px) ;
+}
+.headhesive--stick{
+  transform: translateY(0) !important;
+  transition: .3s;
+}
+.headhesive--unstick{
+  transform: translateY(-100px);
+  transition: .3s;
+}
+/*======================================SLIDER===============================================*/
+#slider{
+	background: #234de7;
+	margin-top: 20px;
+}
+.slider{
+	padding: 15px 0;
+}
+
+#info{
+	background: url(../img/info-bg.jpg) no-repeat top center;
+	background-size: cover;
+}
+#info h2{
+	font-family: 'Exo Italic', Arial, sans-serif;
+	font-weight: 600;
+	color: #234de7;
+	margin-top: 40px;
+}
+#info p{
+	font-family: 'Exo Italic', Arial, sans-serif;
+	font-weight: 600;
+	margin: 20px 0;
+}
+#info p:last-child{
+	margin-bottom: 40px;
+}
+/*=======================================OBJECTS==============================================*/
+#objects{
+	background: #234de7;
+}
+.objects-wrap{
+	padding: 0;
+}
+#objects p{
+	font-family: 'Exo Italic', Arial, sans-serif;
+	font-weight: 600;
+	font-size: 1.2rem;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 5px;
+}
+/*======================================DESC===============================================*/
+#desc{margin-bottom: 30px;}
+#desc h2{
+	font-family: 'Exo Italic', Arial, sans-serif;
+	font-weight: 600;
+	margin-top: 40px;
+}
+#desc a:focus, #desc a:hover{text-decoration: none;}
+
+#desc .col-md-6 p{font-family: 'Exo Italic', Arial, sans-serif; font-weight: 600;}
+.fw-600{font-weight: 600;}
+#desc h4{
+	text-align: center; 
+	font-family: 'Exo Italic', Arial, sans-serif;
+}
+#desc a h4 span{color:#868686;}
+/*======================================TABLE===============================================*/
+td, th{
+	color: #234de7;
+	font-family: 'Exo Italic', Arial, sans-serif;
+}
+th{background: #efecec;}
+#close-btn{color: #868686;}
+#close-btn img{transform: rotate(180deg);}
+/*======================================REVIEWS===============================================*/
+#reviews{
+	background: url(../img/rev-bg.jpg) no-repeat center;
+	background-size: cover;	
+}
+#rev-wrap{
+	background-color: #234de7;
+	padding: 30px 0;
+}
+#reviews .col-md-3 img{
+	border-radius: 50%;
+	box-shadow: 2px 2px 7px 1px #000;
+}
+#reviews h2{
+	font-family: 'Exo Italic', Arial, sans-serif;
+    font-weight: 600;
+	text-align: center;
+	color: #234de7;
+	margin: 30px 0;
+}
+.rev-name{
+	font-family: 'Exo Italic', Arial, sans-serif; 
+	color: #494949;
+	text-align: center;
+	font-size: 1.15rem;
+	font-weight: 600;
+	margin-top: 20px;
+}
+.rev-text{
+	margin-top: 10px;
+	font-family: 'Exo Italic', Arial, sans-serif;
+    font-weight: 600;
+	text-align: center;
+	color: #234de7;
+	font-size: 1rem;
+}
+#rev-form{
+	padding-bottom: 30px;
+}
+#rev-form input, #rev-form textarea, #rev-form select{
+	border: 3px solid #234de7; 
+	border-radius: 20px;
+	margin: 7px 0;
+}
+#rev-form textarea{
+	height: 135px;
+}
+#rev-form .btn{
+	float: right;
+	background: #fff;
+	border-radius: 20px;
+	border: 3px solid #234de7;
+	padding: 0.5rem 6rem;
+	cursor: pointer;
+}
+
+/*=====================================ASK-REPORT================================================*/
+#ask-report{
+	background: url(../img/asks-bg.jpg) no-repeat top center;
+	background-size: cover;
+	padding-bottom: 30px;
+}
+#ask-report .container{
+	margin-top: 30px;
+	font-family: 'Exo Italic', Arial, sans-serif;
+    font-weight: 600;
+}
+#ask-report h2{
+	color: #234de7;
+	margin: 20px 0;
+}
+#ask-report h4 a{
+	color: #494949;
+}
+.reports h2, .reports h4{
+	text-align: right;
+}
+.reports h4 a{
+	color: #494949;
+}
+.list-group-item{
+	border: none;
+	background-color: transparent;
+	display: block;
+}
+.list-group-item a{
+	float: right;
+}
+.answer{color: #234de7;}
+.panel-title h5{font-weight: 600;}
+/*=========================================CONTACTS============================================*/
+#contacts{
+	margin-bottom: 50px;
+	font-family: 'Exo Italic', Arial, sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+#contact-collapse .container{margin-top: 30px;}
+#contacts h2{
+	font-family: 'Exo Italic', Arial, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    background: #052bb6;
+	border-bottom-left-radius:50%;
+	border-bottom-right-radius: 50%;
+	border-top-right-radius: 10%;
+	border-top-left-radius: 10%;
+	box-shadow: 0 2px 5px #000;
+	padding-bottom: 5px;
+}
+#contacts h2 a{color: #fff;}
+#contacts h2 a:hover,#contacts a:focus{text-decoration: none; outline: none;}
+#map-wrap{
+	margin-top: 30px;
+}
+#map-wrap iframe{
+	width: 100%;
+	box-shadow: 3px 4px 25px #000;
+}
+
+#contacts .panel-heading{position: relative;}
+
+#contacts .panel-title a img{
+	max-width: 50px;
+	height: auto;
+	position: absolute;
+	left: 38%;
+	bottom: -20px;
+}
+/*=========================================FOOTER============================================*/
+footer{
+	background: #052bb6;
+	padding: 15px 0;
+}
+footer p{
+	margin: 0 auto;
+	color: #fff;
+	font-family: 'Exo Italic', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+footer a{color: #0bdcff;}
+footer a:hover{color: #fff; text-decoration: none;}
+footer a:focus{outline: none;text-decoration: none;}
+/*=====================================================================================*/
+
+/*====================================MY-MENU=================================================*/
+#menu{
+	position: absolute;
+	top: 300px;
+	left: 60px;
+}
+.main-btn{
+	width: 65px;
+	height: 65px;
+	overflow: hidden;
+
+	background: url(../img/menu-btn.png) no-repeat;
+}
+/*==============================BAC-TO-TOP=========================================*/
+#back-top {
+    position: fixed;
+    bottom: 0;
+    padding: 0;
+    right: 4%;
+    z-index:99991;
+
+    }
+#back-top a{
+	padding-top: 5px;
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+    width: 80px;
+    height: 25px;
+    background: rgba(0, 0, 0, 0.4);
+    display:block;
+    text-decoration:none;
+    -webkit-transition: all linear 0.2s; 
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+    text-align: center;
+    color: #fff;
+     
+    }
+ 
+#back-top a:hover{    
+    background: #0e45aa;
+    -webkit-transition: all linear 0.2s; 
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    transition: all linear 0.2s;
+    color: #fff;
+    }
+/*======================================MEDIA===============================================*/
+/*========================================2100=============================================*/
+@media (max-width:2100px ) {
+	#contacts .panel-title a img{
+		left: 42%;
+	}
+}
+/*========================================1800=============================================*/
+@media (max-width:1800px ) {
+	#contacts .panel-title a img{
+		left: 41%;
+	}
+}
+/*========================================1600=============================================*/
+@media (max-width:1600px ) {
+	#contacts .panel-title a img{
+		left: 40%;
+	}
+}
+/*========================================1400=============================================*/
+@media (max-width:1400px ) {
+	#contacts .panel-title a img{
+		left: 39%;
+	}
+}
+/*========================================1300=============================================*/
+@media (max-width:1300px ) {
+	#contacts .panel-title a img{
+		left: 38%;
+	}
+}
+/*========================================1200=============================================*/
+@media (max-width:1200px ){
+	#logo-desc p{font-size: .8rem;}
+	#contacts .panel-title a img{
+		left: 37%;
+	}
+}
+/*========================================1024=============================================*/
+@media (max-width:1024px){
+	#logo-desc p{font-size: .7rem;}
+	#contacts .panel-title a img{
+		left: 35%;
+	}
+}
+/*=======================================992==============================================*/
+@media (max-width:992px ){
+	table th, table td{
+		font-size: 0.7rem;
+	}
+}
+/*=======================================980==============================================*/
+@media (max-width:980px ){
+	#objects p{font-size: 1rem;}
+	#contacts .panel-title a img{
+		left: 33%;
+	}
+}
+
+/*=======================================767==============================================*/
+@media (max-width:767px ) {
+	header p, #tel, #desc-right-part{
+		text-align: center;
+	}
+	#logo-img-wrap, #logo-desc{margin: 0;}
+	#contacts .panel-title a img{
+		left: 30%;
+	}
+
+}
+/*=======================================680==============================================*/
+@media (max-width:680px ) {
+	header p, #tel, #desc-right-part{
+		text-align: center;
+	}
+	#logo-img-wrap, #logo-desc{margin: 0;}
+	#contacts .panel-title a img{
+		left: 26%;
+	}
+
+}
+/*=======================================575==============================================*/
+@media (max-width:575px ) {
+	.objects-wrap{box-shadow: 0 3px 15px #2f2f2f;}
+	#rev-wrap .col-12{
+		margin-top:20px;}
+	#rev-wrap img{display: block; margin: 0 auto;}
+	#main br {display: block;}
+	#main{
+		background-size: 100%;
+		height: 72px;
+		width: 70px;
+		margin-top: 30px;
+		margin-left: 0;
+	}
+	#main:hover {
+		width: 315px;
+		background-size: 25%;
+	}
+	.my-btn{margin: 0 10px;}
+	#main:hover #btn-wrap{width:235px;}
+	#btn-wrap {
+		left: 75px;
+		top: 13px;
+		height: 45px;
+	}
+	.my-btn {
+		font-size: 11px;
+		margin: 0 7px;
+	}
+	#contacts .panel-title a img{
+		left: 20%;
+	}
+	#info p, #desc .col-md-6 p, #desc p, footer p{font-size: 12px;}
+	section div h2{font-size: 1.5rem;}
+	#desc h4, .panel-title {font-size:1.2rem;}
+}
+/*=====================================480================================================*/
+@media (max-width:767px ) {
+	#contacts .panel-title a img{
+		left: 15%;
+	}
+}
+/*=====================================400===============================================*/
+@media (max-width:767px ) {
+	#contacts .panel-title a img{
+		left: 8%;
+	}
+}
+/*=====================================================================================*/
+/*=====================================================================================*/
